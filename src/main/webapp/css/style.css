@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+/* 全ページ共通 */
+* {
+	background-color: dimgray;
+	color: skyblue;
+	border-radius: 10px; /* 枠のコーナーに丸みを持たせる */
+}
+
+/* 画像 */
+.logo-img {
+	width: 90px;
+	height: 90px;
+	border: 3px solid orange;
+	margin: 0px 30px 20px 0px;
+}
+.logo-img:hover {
+	box-shadow: 0 4px 12px orange; /* 横, 縦, ぼかし, 色 */
+	transform: translateY(-2px);  /* 少し浮かせる効果 */
+}
+
+/* リンク */
+.a-link {
+	display: inline-block; /* インライン要素をブロック要素に変更する( width, margin 等を使える様にする) */
+	text-decoration: none; /* 下線を消す */
+	background-color: black;
+	border: 2px solid orange;
+	padding: 8px;
+	margin: 5px
+}
+.a-link:hover {
+	box-shadow: 0 4px 12px orange; /* 横, 縦, ぼかし, 色 */
+	transform: translateY(-2px);  /* 少し浮かせる効果 */
+}
+
+/* ユーザー情報入力 */
+.entry-form input[type="text"],
+.entry-form input[type="password"] {
+	font-size: 15px;
+	display: inline-block; /* インライン要素をブロック要素に変更する( width, margin 等を使える様にする) */
+	background-color: black;
+	border: 2px solid orange;
+	padding: 8px;
+	margin: 5px;
+	width: 250px;
+}
+.entry-form input[type="text"]:hover,
+.entry-form input[type="password"]:hover {
+	box-shadow: 0 4px 12px orange; /* 横, 縦, ぼかし, 色 */
+	transform: translateY(-2px);  /* 少し浮かせる効果 */
+}
+
+/* button 全共通 */
+button {
+	font-size: 15px;
+	display: inline-block; /* インライン要素をブロック要素に変更する( width, margin 等を使える様にする) */
+	background-color: black;
+	border: 2px solid orange;
+	padding: 8px;
+	margin: 5px
+}
+button:hover {
+	box-shadow: 0 4px 12px orange; /* 横, 縦, ぼかし, 色 */
+	transform: translateY(-2px);  /* 少し浮かせる効果 */
+}
+
+/* ツイート入力 */
+.tweet-textarea textarea {
+	font-size: 15px;
+	display: inline-block; /* インライン要素をブロック要素に変更する( width, margin 等を使える様にする) */
+	background-color: black;
+	border: 2px solid orange;
+	margin: 5px;
+}
+.tweet-textarea textarea:hover {
+	box-shadow: 0 4px 12px orange; /* 横, 縦, ぼかし, 色 */
+	transform: translateY(-2px);  /* 少し浮かせる効果 */
+}
+
+/* ツイート出力 */
+.tweet-table th,
+.tweet-table td {
+	font-size: 15px;
+	color: black;
+	display: inline-block; /* インライン要素をブロック要素に変更する( width, margin 等を使える様にする) */
+	background-color: bisque;
+	border: 2px solid greenyellow;
+	padding: 8px;
+	margin: 5px;
+}
+.tweet-table th {
+	width: 100px;
+}
+.tweet-table td {
+	width: auto;
+}
+
+/* アカウント削除時 */
+.delete-show {
+	font-size: 15px;
+	color: red;
+	display: inline-block; /* インライン要素をブロック要素に変更する( width, margin 等を使える様にする) */
+	background-color: black;
+	border: 2px solid red;
+	padding: 8px;
+	margin: 5px;
+}
+.delete-button button {
+	font-size: 25px;
+	color: red;
+	display: inline-block; /* インライン要素をブロック要素に変更する( width, margin 等を使える様にする) */
+	background-color: black;
+	border: 2px solid red;
+	padding: 8px;
+	margin: 5px;
+}
+.delete-button button[value="はい"] {
+	font-size: 8px;
+}
+delete-button:hover {
+	box-shadow: 0 4px 12px red; /* 横, 縦, ぼかし, 色 */
+	transform: translateY(-2px);  /* 少し浮かせる効果 */
+}
+.del-cansel { /* アカウント削除しようとしたけどしなかった時のheaderMsgの装飾 */
+	color: red;
+	display: inline-block; /* インライン要素をブロック要素に変更する( width, margin 等を使える様にする) */
+	background-color: black;
+}
+
+
+
+
