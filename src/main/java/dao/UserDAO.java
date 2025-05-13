@@ -12,7 +12,7 @@ public class UserDAO {
 	
 	private final String DB_URL = "jdbc:mysql://localhost:3306/tubuittar";
 	private final String DB_USER = "root";
-	private final String DB_PASS = "haruprogram";
+	private final String DB_PASS = "password1234";
 	
 	public boolean accountCheck(User user) {
 		// データベースに登録されているアカウントと引数のユーザーをチェックして
