@@ -11,14 +11,16 @@
 <body>
 <%@ include file="header.jsp" %>
 <%@ include file="headerMsg.jsp" %>
-	
+
 	<form action="EntryServlet" method="post">
 		<div class="entry-form">
-			<input type="text" name="name" placeholder="名前を入力してください" required /><br>
-			<input type="password" name="pass" placeholder="パスワードを入力してください" required />
-		</div>
+			<label for="userName">ユーザーネーム</label>
+				<input type="text" name="name" id="userName" placeholder="名前を入力してください" required /><br>
+			<label for="password">パスワード</label>
+			<input type="password" name="pass" id="password" placeholder="パスワードを入力してください" required /><br>
 		<div class="entry-button">
 			<button type="submit">登録</button>
+		</div>
 		</div>
 	</form>
 	

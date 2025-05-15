@@ -2,65 +2,66 @@
 
 /* 全ページ共通 */
 * {
-	background-color: dimgray;
-	color: skyblue;
+	background-color: black;
 	border-radius: 10px; /* 枠のコーナーに丸みを持たせる */
+	color: greenyellow;
+	margin: 5px;
+	padding: 5px;
 }
 
 /* 画像 */
 .logo-img {
-	width: 90px;
-	height: 90px;
+	width: 100px;
+	height: 100px;
 	border: 3px solid orange;
-	margin: 0px 30px 20px 0px;
-}
-.logo-img:hover {
-	box-shadow: 0 4px 12px orange; /* 横, 縦, ぼかし, 色 */
-	transform: translateY(-2px);  /* 少し浮かせる効果 */
+	margin: 0 0 10px 10px;
+	padding: 0;
 }
 
 /* リンク */
 .a-link {
+	color: orange;
 	display: inline-block; /* インライン要素をブロック要素に変更する( width, margin 等を使える様にする) */
 	text-decoration: none; /* 下線を消す */
 	background-color: black;
 	border: 2px solid orange;
-	padding: 8px;
-	margin: 5px
-}
-.a-link:hover {
-	box-shadow: 0 4px 12px orange; /* 横, 縦, ぼかし, 色 */
-	transform: translateY(-2px);  /* 少し浮かせる効果 */
 }
 
 /* ユーザー情報入力 */
+.entry-form label {
+	text-shadow: 0 1px 4px greenyellow;
+	color: greenyellow;
+	display: inline-block;
+	border-bottom: 1px solid greenyellow;
+	border-top: 1px solid greenyellow;
+	width: 150px;
+}
 .entry-form input[type="text"],
 .entry-form input[type="password"] {
+	color: greenyellow;
 	font-size: 15px;
 	display: inline-block; /* インライン要素をブロック要素に変更する( width, margin 等を使える様にする) */
 	background-color: black;
-	border: 2px solid orange;
-	padding: 8px;
-	margin: 5px;
+	border: 2px solid greenyellow;
 	width: 250px;
 }
 .entry-form input[type="text"]:hover,
 .entry-form input[type="password"]:hover {
-	box-shadow: 0 4px 12px orange; /* 横, 縦, ぼかし, 色 */
+	box-shadow: 0 4px 12px greenyellow; /* 横, 縦, ぼかし, 色 */
 	transform: translateY(-2px);  /* 少し浮かせる効果 */
 }
 
 /* button 全共通 */
 button {
+	text-shadow: 0 1px 4px greenyellow;
+	color: greenyellow;
 	font-size: 15px;
 	display: inline-block; /* インライン要素をブロック要素に変更する( width, margin 等を使える様にする) */
 	background-color: black;
-	border: 2px solid orange;
-	padding: 8px;
-	margin: 5px
+	border: 2px solid greenyellow;
 }
 button:hover {
-	box-shadow: 0 4px 12px orange; /* 横, 縦, ぼかし, 色 */
+	box-shadow: 0 4px 12px greenyellow; /* 横, 縦, ぼかし, 色 */
 	transform: translateY(-2px);  /* 少し浮かせる効果 */
 }
 
@@ -69,11 +70,10 @@ button:hover {
 	font-size: 15px;
 	display: inline-block; /* インライン要素をブロック要素に変更する( width, margin 等を使える様にする) */
 	background-color: black;
-	border: 2px solid orange;
-	margin: 5px;
+	border: 2px solid greenyellow;
 }
 .tweet-textarea textarea:hover {
-	box-shadow: 0 4px 12px orange; /* 横, 縦, ぼかし, 色 */
+	box-shadow: 0 4px 12px greenyellow; /* 横, 縦, ぼかし, 色 */
 	transform: translateY(-2px);  /* 少し浮かせる効果 */
 }
 
@@ -81,12 +81,9 @@ button:hover {
 .tweet-table th,
 .tweet-table td {
 	font-size: 15px;
-	color: black;
 	display: inline-block; /* インライン要素をブロック要素に変更する( width, margin 等を使える様にする) */
-	background-color: bisque;
+	background-color: black;
 	border: 2px solid greenyellow;
-	padding: 8px;
-	margin: 5px;
 }
 .tweet-table th {
 	width: 100px;
@@ -102,8 +99,6 @@ button:hover {
 	display: inline-block; /* インライン要素をブロック要素に変更する( width, margin 等を使える様にする) */
 	background-color: black;
 	border: 2px solid red;
-	padding: 8px;
-	margin: 5px;
 }
 .delete-button button {
 	font-size: 25px;
@@ -111,8 +106,6 @@ button:hover {
 	display: inline-block; /* インライン要素をブロック要素に変更する( width, margin 等を使える様にする) */
 	background-color: black;
 	border: 2px solid red;
-	padding: 8px;
-	margin: 5px;
 }
 .delete-button button[value="はい"] {
 	font-size: 8px;

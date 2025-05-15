@@ -15,9 +15,9 @@
 	<form action="TweetServlet" method="post">
 		<div class="tweet-textarea">
 			<textarea name="tweet" rows="5" cols="30" ></textarea>
-		</div>
 		<div class="tweet-button">
 			<button type="submit">つぶやく</button>
+		</div>
 		</div>
 	</form>
 	<%-- ↓ツイートが１件以上ある時のみ↓ --%>
